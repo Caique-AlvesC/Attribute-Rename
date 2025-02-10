@@ -1,0 +1,12 @@
+{
+    "name": "attribute-renamer",
+    "title": "Attribute Renamer",
+    "description": "Substitui Aparência por Magnetismo e Percepção por Determinação na interface.",
+    "version": "1.0.0",
+    "minimumCoreVersion": "10",
+    "compatibleCoreVersion": "12",
+    "author": "Seu Nome",
+    "esmodules": ["attribute-renamer.js"],
+    "manifest": "https://seu-repositorio.github.io/attribute-renamer/module.json",
+    "download": "https://seu-repositorio.github.io/attribute-renamer.zip"
+}
