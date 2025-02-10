@@ -16,12 +16,19 @@ Hooks.on("renderActorSheet", (app, html, data) => {
     substituirAtributos();
 });
 
-// Aplica a substituição também em diálogos de teste
+// Aplica a substituição dentro dos diálogos de testes (`vampireDialog`)
 Hooks.on("renderDialog", (app, html, data) => {
     substituirAtributos();
 });
 
-// Garante que a substituição ocorra também no carregamento do jogo
+// Garante que a substituição ocorra sempre que uma janela de rolagem de testes (`vampireDialog`) for aberta
+Hooks.on("renderApplication", (app, html, data) => {
+    if (app.options.classes?.includes("vampireDialog")) {
+        substituirAtributos();
+    }
+});
+
+// Executa a substituição no carregamento do jogo
 Hooks.on("ready", () => {
     substituirAtributos();
 });
