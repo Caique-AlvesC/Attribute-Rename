@@ -1,0 +1,16 @@
+{
+    "wod": {
+        "attributes": {
+            "appearance": "Magnetismo",
+            "perception": "Determinação",
+            "short": {
+                "app": "Mag",
+                "per": "Det"
+            },
+            "bonus": {
+                "appearance": "Magnetismo bônus",
+                "perception": "Determinação bônus"
+            }
+        }
+    }
+}
