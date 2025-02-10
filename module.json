@@ -16,7 +16,7 @@
         "maximum": "12.999"
     },
     "esmodules": ["attribute-renamer.js"],
-    "manifest": "https://raw.githubusercontent.com/Caique-AlvesC/attribute-renamer/main/module.json",
+    "manifest": "https://raw.githubusercontent.com/Caique-AlvesC/Attribute-Rename/refs/heads/main/module.json?token=GHSAT0AAAAAAC5XYKY7CPFJXMGGM445INBMZ5KKREQ",
     "download": "https://github.com/Caique-AlvesC/Attribute-Rename/archive/refs/heads/main.zip"
     
 }
