@@ -11,24 +11,29 @@ function substituirAtributos() {
     });
 }
 
-// Aplica a substituição quando uma ficha de personagem for aberta
+// Aplica a substituição em fichas
 Hooks.on("renderActorSheet", (app, html, data) => {
     substituirAtributos();
 });
 
-// Aplica a substituição dentro dos diálogos de testes (`vampireDialog`)
-Hooks.on("renderDialog", (app, html, data) => {
-    substituirAtributos();
-});
-
-// Garante que a substituição ocorra sempre que uma janela de rolagem de testes (`vampireDialog`) for aberta
+// Aplica a substituição dentro dos diálogos de teste (`vampireDialog`, `mageDialog`, `changelingDialog`)
 Hooks.on("renderApplication", (app, html, data) => {
-    if (app.options.classes?.includes("vampireDialog")) {
+    if (app.options.classes?.some(cls => ["vampireDialog", "mageDialog", "changelingDialog"].includes(cls))) {
         substituirAtributos();
     }
 });
 
-// Executa a substituição no carregamento do jogo
+// Aplica a substituição para **todas** as janelas e botões de teste
+Hooks.on("renderDialog", (app, html, data) => {
+    substituirAtributos();
+});
+
+// Aplica a substituição para **qualquer área carregada** no Foundry
+Hooks.on("renderSidebarTab", (app, html, data) => {
+    substituirAtributos();
+});
+
+// Aplica a substituição no carregamento do jogo
 Hooks.on("ready", () => {
     substituirAtributos();
 });
