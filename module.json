@@ -4,9 +4,10 @@
     "description": "Substitui Aparência por Magnetismo e Percepção por Determinação na interface.",
     "version": "1.0.0",
     "minimumCoreVersion": "10",
-    "compatibleCoreVersion": "12",
-    "author": "Seu Nome",
+    "compatibleCoreVersion": "12.331",
+    "author": "Caique Alves Correia da Silva",
     "esmodules": ["attribute-renamer.js"],
-    "manifest": "https://seu-repositorio.github.io/attribute-renamer/module.json",
-    "download": "https://seu-repositorio.github.io/attribute-renamer.zip"
+    "manifest": "https://raw.githubusercontent.com/Caique-AlvesC/attribute-renamer/main/module.json",
+    "download": "https://github.com/Caique-AlvesC/attribute-renamer/archive/refs/heads/attribute-renamer.zip"
+    
 }
